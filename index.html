@@ -13,7 +13,7 @@
       <!-- jQuery library -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-        <script src="js/jquery.ripples-min.js"></script>
+     <!--    <script src="js/jquery.ripples-min.js"></script> -->
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/jquery-ui.css">
@@ -364,14 +364,11 @@ A website can be used to accomplish many different marketing strategies to help 
               <h2 class="h4 text-black mb-5">Contact Form</h2>
 
               <div class="row form-group">
-                <div class="col-md-6 mb-3 mb-md-0">
-                  <label class="text-black" for="fname">First Name</label>
-                  <input type="text" id="fname" class="form-control" id="fname">
+                  <div class="col-md-12">
+                  <label class="text-black" for="email">Name</label>
+                  <input type="text" id="fname" class="form-control" >
                 </div>
-                <div class="col-md-6">
-                  <label class="text-black" for="lname">Last Name</label>
-                  <input type="text" id="lname" class="form-control" id="lname">
-                </div>
+             
               </div>
 			  
 			    <div class="row form-group">
@@ -429,13 +426,13 @@ A website can be used to accomplish many different marketing strategies to help 
 
   </div> <!-- .site-wrap -->
   <script type="text/javascript">
-  $(".slider").ripples({
+ <!--  $(".slider").ripples({
   resolution: 1024,
   dropRadius: 16, //px
   perturbance: 0.8,
   interactive: true
   });
-
+ -->
   </script>
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/jquery-ui.js"></script>
@@ -503,14 +500,14 @@ ref.push(data);
 function submitForm() {
 
  var lfname = document.getElementById("fname").value;
-  var llname = document.getElementById("lname").value;
+
    var lmail = document.getElementById("email").value;
     var lsub = document.getElementById("subject").value;
 	 var lmes = document.getElementById("message").value;
 	 var lphone = document.getElementById("phone").value;
 
 	 
-	 if(lfname=="" || llname==""  || lmail==""|| lsub==""|| lmes=="" || lphone ==""){
+	 if(lfname==""  || lmail==""|| lsub==""|| lmes=="" || lphone ==""){
 	
 
 document.getElementById("error").style.display = 'block';
@@ -527,8 +524,7 @@ return false;
   
   var ref = database.ref('enquiry_form');
   var data = {
-firstname: lfname,
-lastname:lname,
+fullname: lfname,
 email:lmail,
 subject:lsub,
 message:lmes,
