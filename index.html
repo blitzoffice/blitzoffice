@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 
+	
     <link href="https://fonts.googleapis.com/css?family=Pirulen:300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="fonts/icomoon/style.css">
 
@@ -31,11 +32,22 @@
 
     <link rel="stylesheet" href="css/style.css">
   <link rel="shortcut icon" href="icon/blitz.png">
+  
+  <style>
+  #fixedbutton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px; 
+	width:70px;
+	height:70px;
+	z-index:3;
+}
+  </style>
   </head>
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
 
 
-
+<a href="https://wa.me/+60174831309"><img src="https://cdn.pixabay.com/photo/2015/08/03/13/58/soon-873316_960_720.png" id="fixedbutton"></a>
 
 
   <div class="site-wrap">
@@ -403,9 +415,12 @@ A website can be used to accomplish many different marketing strategies to help 
               </div>
 
               <div class="row form-group">
-                <div class="col-md-12">
-                  <input  value="Send Message" class="btn btn-primary btn-md text-white"  onclick="submitForm();">
+                <div class="col-md-3 col-sm-3 col-xs-2">
+               <input  value="Send Message" class="btn btn-primary text-white"  onclick="submitForm();"> 
+		      
                 </div>
+				
+				
               </div>
 
 			  
