@@ -32,17 +32,7 @@
 
     <link rel="stylesheet" href="css/style.css">
   <link rel="shortcut icon" href="icon/blitz.png">
-  
-  <style>
-  #fixedbutton {
-    position: fixed;
-    bottom: 20px;
-    right: 20px; 
-	width:60px;
-	height:60px;
-	z-index:3;
-}
-  </style>
+
   </head>
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
 
@@ -81,15 +71,15 @@
                   <a href="#about-section" class="nav-link">ABOUT US</a>
                 </li>
 
-            
-              
+
+
                 <li><a href="#pricing-section" class="nav-link">PRICING</a></li>
-         
-               <li><a href="#contact-section" class="nav-link">CONTACT</a></li> 
+
+               <li><a href="#contact-section" class="nav-link">CONTACT</a></li>
 		<li>
                   <a href="color_comb_view.html" class="nav-link">THEME <i class="fa fa-file-pdf-o"></i></a></li>
 			<!--     <li><a href="theme.html" class="nav-link">Web Theme</a></li>  -->
-		
+
               </ul>
             </nav>
           </div>
@@ -127,7 +117,7 @@
     </div>
   </div>
   <br/>
-  
+
 <!--About section-->
     <section class="site-section" id="about-section">
       <div class="container">
@@ -186,7 +176,7 @@
 
 
 
-  
+
 
     <section class="site-section bg-light" id="pricing-section">
       <div class="container">
@@ -203,7 +193,7 @@
                 <span><span>RM699</span> / 3 webpages</span>
               </div>
               <ul class="list-unstyled ul-check success mb-5">
-		<li>Available until March 2021</li>
+		               <li>Available until March 2021</li>
                 <li>Home, About Us, and Enquiry Form pages</li>
                 <li>Maintenance half year</li>
                 <li>Subsequent yearly maintenance fees: RM250</li>
@@ -212,7 +202,7 @@
                 <li class="remove">Linking to Facebook page, Whatsapp contact</li>
               </ul>
               <p class="text-center">
-             
+
               </p>
             </div>
           </div>
@@ -233,11 +223,11 @@
                 <li class="remove">Linking to Facebook page, Whatsapp contact</li>
               </ul>
               <p class="text-center">
-             
+
               </p>
             </div>
           </div>
-		
+
           <div class="col-md-6 mb-4 mb-lg-0 col-lg-4" data-aos="fade-up" data-aos-delay="100">
             <div class="pricing">
               <h3 class="text-center text-black">2nd Package</h3>
@@ -254,7 +244,7 @@
                 <li>Linking to Facebook page, Whatsapp contact</li>
               </ul>
               <p class="text-center">
-              
+
               </p>
             </div>
           </div>
@@ -275,7 +265,7 @@
                 <li>Linking to Facebook page, Whatsapp contact</li>
               </ul>
               <p class="text-center">
-               
+
               </p>
             </div>
           </div>
@@ -306,9 +296,9 @@ A website can be used to accomplish many different marketing strategies to help 
             <p>Currently, we don’t accept instalment payment. Customer should make 50% deposit payment, once webpages done customer should pay the remaining payment.</p>
             </div>
 
-          
+
           </div>
-  
+
 
 
 
@@ -322,9 +312,9 @@ A website can be used to accomplish many different marketing strategies to help 
         <div class="row mb-5">
 
           <div class="col-lg-5 ml-auto mb-5 order-1 order-lg-2" data-aos="fade" data-aos="fade-up" data-aos-delay="">
-            <img src="images/about_1.jpg" alt="Image" class="img-fluid rounded">
+            <img src="images/about_1.jpg" alt="Image" class="img-fluid rounded" data-aos="zoom-in-up">
           </div>
-          <div class="col-lg-6 order-2 order-lg-1" data-aos="fade">
+          <div class="col-lg-6 order-2 order-lg-1" data-aos="flip-left">
 
             <div class="row">
 
@@ -404,9 +394,9 @@ A website can be used to accomplish many different marketing strategies to help 
                   <label class="text-black" for="email">Name</label>
                   <input type="text" id="fname" class="form-control" >
                 </div>
-             
+
               </div>
-			  
+
 			    <div class="row form-group">
 
                 <div class="col-md-12">
@@ -441,17 +431,17 @@ A website can be used to accomplish many different marketing strategies to help 
               <div class="row form-group">
                 <div class="col-md-3 col-sm-3 col-xs-2">
               <!--  <input  value="Send Message" class="btn btn-primary text-white"  onclick="submitForm();">  -->
-		      <button type="button" class="btn btn-primary btn-lg" onclick="submitForm();">Submit</button>  
+		      <button type="button" class="btn btn-primary btn-lg" onclick="submitForm();">Submit</button>
                 </div>
-				
-				
+
+
               </div>
 
-			  
+
 			         <div class="row form-group">
                 <div class="col-md-12">
                   <label class="text-red" for="message" style="color: red;display:none;" id="error">Some fields are empty. Please check again before submitting.</label>
-                
+
                 </div>
               </div>
 
@@ -518,7 +508,7 @@ A website can be used to accomplish many different marketing strategies to help 
   firebase.analytics();
   var database = firebase.database();
   console.log(firebase);
-  
+
  <!--  var ref = database.ref('enquiry_form');
   var data = {
 firstname: "abc",
@@ -532,9 +522,9 @@ message:"this is the message"
 ref.push(data);
 
  -->
- 
 
-  
+
+
 </script>
 
 <script>
@@ -547,9 +537,9 @@ function submitForm() {
 	 var lmes = document.getElementById("message").value;
 	 var lphone = document.getElementById("phone").value;
 
-	 
+
 	 if(lfname==""  || lmail==""|| lsub==""|| lmes=="" || lphone ==""){
-	
+
 
 document.getElementById("error").style.display = 'block';
 
@@ -562,7 +552,7 @@ return false;
 	  sendEmail(lfname,lmail,lsub,lmes,lphone);
 	 var database = firebase.database();
   console.log(firebase);
-  
+
   var ref = database.ref('enquiry_form');
   var data = {
 fullname: lfname,
@@ -573,16 +563,16 @@ phone:lphone
 
 }
 
-	
+
 ref.push(data);
 alert("Submitted successfully! Your contact person will get contact you as soon as possible.");
 document.getElementById("error").style.display = 'none';
 document.location+='#home-section';
 	 }
-	 
 
 
-  
+
+
 }
 function sendEmail(lfname,lmail,lsub,lmes,lphone){
 
@@ -595,7 +585,7 @@ Email.send({
     Subject : `[BLITZOFFICE] New Message Received from ${lfname}.`,
     Body : `Full Name: ${lfname} <br/> Email: ${lmail}  <br/> Subject: ${lsub}  <br/> Message: ${lmes}  <br/> Phone number: ${lphone}  <br/> `
 }).then(
- 
+
 );
 
 }
@@ -615,9 +605,9 @@ Email.send({
 
 
 <!-- copyright -->
- <footer> <small> Copyright &copy; 2020 Blitz Office. | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com">Colorlib</a></small> 	
+ <footer> <small> Copyright &copy; 2020 Blitz Office. | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com">Colorlib</a></small>
 <!-- /copyright -->
-</footer> 
-  
+</footer>
+
   </body>
 </html>
